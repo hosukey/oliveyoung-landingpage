@@ -1,16 +1,38 @@
+.mobile-nav-header {
+  display: none;
+  z-index: -999;
+}
+
+.mobile-nav-header .logo {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.mobile-nav-header button {
+  background-color: transparent;
+  font-size: var(--fontsize-ml);
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.mobile-nav-header li:nth-child(2) {
+  justify-content: center;
+}
+
 .mobile-nav {
   width: 380px;
   height: 100vh;
+  top: 0;
   background-color: var(--color-primary);
-  /* color: white; */
   position: fixed;
   z-index: 999;
   overflow-y: auto;
+  display: none;
 }
 
 .mobile-nav button {
   background-color: transparent;
-  /* color: white; */
 }
 
 .mobile-nav .fa-times {
@@ -56,4 +78,23 @@
 
 .mobile-nav .menu li:hover {
   opacity: 60%;
+}
+
+@media only screen and (max-width: 1120px) {
+  .mobile-nav-header {
+    display: block;
+  }
+
+  .mobile-nav {
+    /* display: block; */
+  }
+
+  .navigation-desktop > .menu,
+  .navigation-desktop > .user,
+  .navigation-desktop > img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 764px) {
 }

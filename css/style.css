@@ -53,7 +53,7 @@ nav {
   background-color: var(--color-primary-opacity4);
 }
 
-nav > .container {
+nav .navigation-desktop {
   display: flex;
   justify-content: space-between;
   height: 60px;
@@ -92,16 +92,16 @@ nav img {
   border-bottom: 1px solid var(--color-black);
 }
 
-.navigation .container .user li:first-child {
+.navigation-desktop .user li:first-child {
   display: inline-block;
   position: relative;
 }
 
-.navigation .container .user button {
+.navigation-desktop .user button {
   background-color: transparent;
 }
 
-.navigation .container .user li {
+.navigation-desktop .user li {
   margin-left: var(--spacing-xs);
 }
 

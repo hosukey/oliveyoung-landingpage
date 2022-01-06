@@ -1,0 +1,59 @@
+.mobile-nav {
+  width: 380px;
+  height: 100vh;
+  background-color: var(--color-primary);
+  /* color: white; */
+  position: fixed;
+  z-index: 999;
+  overflow-y: auto;
+}
+
+.mobile-nav button {
+  background-color: transparent;
+  /* color: white; */
+}
+
+.mobile-nav .fa-times {
+  font-size: var(--fontsize-m);
+}
+
+.mobile-nav input {
+  background-color: transparent;
+  border: none;
+  border-width: 1px;
+  border-bottom: 1px solid var(--color-black);
+  padding: var(--spacing-xs);
+  font-size: var(--fontsize-m);
+  font-weight: 600;
+}
+
+.mobile-nav input::placeholder {
+  color: var(--color-lightgray);
+  font-weight: 400;
+}
+
+.mobile-nav-top {
+  display: flex;
+  margin-top: var(--spacing-l);
+  justify-content: space-between;
+  padding: 0 var(--spacing-l);
+}
+
+.mobile-nav .menu {
+  flex-direction: column;
+}
+
+.mobile-nav .menu li {
+  margin-top: var(--spacing-l);
+  font-size: var(--fontsize-ml);
+}
+
+.mobile-nav .account {
+  padding: 0 var(--spacing-l);
+  margin-top: var(--spacing-xxl);
+  font-size: var(--fontsize-ml);
+}
+
+.mobile-nav .menu li:hover {
+  opacity: 60%;
+}

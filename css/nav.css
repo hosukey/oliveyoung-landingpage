@@ -80,13 +80,14 @@
   opacity: 60%;
 }
 
+.hide {
+  display: none;
+}
+
+/* Media Queries */
 @media only screen and (max-width: 1120px) {
   .mobile-nav-header {
     display: block;
-  }
-
-  .mobile-nav {
-    /* display: block; */
   }
 
   .navigation-desktop > .menu,

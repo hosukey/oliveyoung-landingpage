@@ -1,6 +1,7 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&family=lato:wght@300;400;600;700;900&family=Prata&family=Spectral:wght@600&display=swap');
 @import url(nav.css);
+@import url(hero.css);
 
 /* Ogg font import */
 @import url(//db.onlinewebfonts.com/c/2596224269750e00c3ad5356299a3b9f?family=Ogg);
@@ -134,6 +135,11 @@ nav img {
   display: flex;
   align-items: center;
   padding: var(--spacing-l) var(--spacing-s) var(--spacing-m);
+}
+
+#hero .container img {
+  max-width: 70%;
+  min-width: 40%;
 }
 
 .dates {
@@ -600,4 +606,39 @@ nav img {
 
 .custom-shape-divider-top-1641349311 .shape-fill {
   fill: #f5fae8;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1120px) {
+  .mobile-nav-header {
+    display: block;
+  }
+
+  .navigation-desktop > .menu,
+  .navigation-desktop > .user,
+  .navigation-desktop > img {
+    display: none;
+  }
+
+  #hero > .container {
+    flex-direction: column;
+  }
+
+  #hero .contents {
+    transform: translate(-100px, -80px);
+  }
+}
+
+@media only screen and (max-width: 764px) {
+  #hero .contents {
+    transform: translate(0px, 0px);
+    text-align: center;
+    padding-bottom: var(--spacing-l);
+  }
+
+  #hero .dates {
+    margin: auto;
+    margin-bottom: var(--spacing-s);
+    width: 50%;
+  }
 }

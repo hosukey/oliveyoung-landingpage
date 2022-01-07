@@ -304,6 +304,7 @@ nav img {
 .tags {
   display: flex;
   margin-bottom: var(--spacing-l);
+  overflow-wrap: break-word;
 }
 
 .tags li {
@@ -626,6 +627,22 @@ nav img {
 
   #hero .contents {
     transform: translate(-100px, -80px);
+  }
+
+  #advertisement > .container {
+    flex-direction: column;
+  }
+
+  #advertisement .title {
+    width: 100%;
+  }
+  #advertisement .description {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  #advertisement iframe {
+    width: 100%;
   }
 }
 

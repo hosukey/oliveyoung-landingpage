@@ -304,7 +304,7 @@ nav img {
 .tags {
   display: flex;
   margin-bottom: var(--spacing-l);
-  overflow-wrap: break-word;
+  flex-wrap: wrap;
 }
 
 .tags li {
@@ -687,6 +687,17 @@ nav img {
 }
 
 @media only screen and (max-width: 694px) {
+  #advertisement .container {
+    padding: 0px;
+  }
+  #advertisement .shop-cta {
+    margin-bottom: var(--spacing-m);
+  }
+
+  #advertisement .description-container {
+    padding: var(--spacing-l);
+  }
+
   #vdl-advertisement .box-container {
     flex-direction: column;
   }

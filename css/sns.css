@@ -1,0 +1,41 @@
+/* sns */
+
+#sns {
+  padding: var(--spacing-xxl) 0;
+  font-family: 'lato', sans-serif;
+}
+#sns h2 {
+  font-family: 'Ogg', serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#sns p {
+  text-align: center;
+  color: var(--color-darkgray);
+  font-weight: 300;
+  margin-bottom: var(--spacing-l);
+}
+
+.insta-container {
+  display: flex;
+  width: 100%;
+  gap: 1%;
+}
+
+.insta-container li {
+  display: block;
+  overflow: hidden;
+}
+
+.insta-container img {
+  width: 100%;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  display: block;
+}
+
+.insta-container img:hover {
+  transform: scale(1.2);
+}

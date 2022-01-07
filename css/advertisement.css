@@ -1,0 +1,147 @@
+/* advertisement with video clip */
+
+#advertisement {
+  background-color: var(--color-lightgray);
+}
+#advertisement .container {
+  display: flex;
+  padding: var(--spacing-xl) var(--spacing-l);
+  gap: var(--spacing-l);
+}
+
+#advertisement .title {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1px;
+  width: 80%;
+}
+
+#advertisement .title span {
+  color: var(--color-point-green);
+}
+
+.description-container {
+  font-family: 'lato', sans-serif;
+}
+
+.description-container > .description {
+  width: 80%;
+  line-height: 1.6;
+  color: var(--color-darkgray);
+  font-weight: 300;
+  padding: var(--spacing-m) 0 var(--spacing-l) 0;
+}
+
+.tags {
+  display: flex;
+  margin-bottom: var(--spacing-l);
+  flex-wrap: wrap;
+}
+
+.tags li {
+  margin-right: var(--spacing-m);
+  color: var(--color-darkgray);
+}
+
+.description-container > .shop-cta span:first-child {
+  color: var(--color-point);
+  font-weight: 600;
+}
+
+.description-container > .shop-cta {
+  margin-top: var(--spacing-m);
+  font-size: var(--fontsize-s);
+}
+
+.shop-cta i {
+  transition: all 0.2s ease-in;
+  color: var(--color-point);
+}
+
+.shop-cta:hover i {
+  transform: translate(6px);
+}
+
+/* advertisement VDL */
+#vdl-advertisement {
+  font-family: 'lato', sans-serif;
+  padding: var(--spacing-xxl) 0;
+  display: flex;
+}
+
+#vdl-advertisement img {
+  width: 160px;
+}
+
+#vdl-advertisement .line {
+  height: 100%;
+  width: 1px;
+  background-color: var(--color-lightgray);
+}
+
+#vdl-advertisement .container {
+  display: flex;
+}
+
+#vdl-advertisement .box {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  padding: var(--spacing-m);
+}
+
+#vdl-advertisement .box:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+#vdl-advertisement .box .product-name {
+  font-size: var(--fontsize-xs);
+}
+
+.vdl-primer-container {
+  display: flex;
+}
+
+.vdl-primer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: var(--spacing-l);
+  flex: 1;
+  position: relative;
+}
+
+.vdl-primer-container .product {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: var(--fontsize-l);
+}
+
+.vdl-primer-container .description {
+  font-size: var(--fontsize-s);
+  line-height: 1.4;
+  font-weight: 300;
+  margin-top: var(--spacing-s);
+}
+
+.vdl-primer-container .shop-cta span:first-child {
+  color: var(--color-point);
+  font-weight: 600;
+}
+
+.vdl-primer-container .shop-cta {
+  margin-top: var(--spacing-m);
+  font-size: var(--fontsize-s);
+}
+
+.glow {
+  z-index: 1;
+  flex: 1;
+  text-align: right;
+}
+
+.glow img {
+  height: 100%;
+  object-fit: cover;
+}

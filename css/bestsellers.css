@@ -1,0 +1,80 @@
+/* bestsellers */
+
+#bestsellers {
+  font-family: 'lato', sans-serif;
+  margin-bottom: var(--spacing-xl);
+}
+
+.bestsellers-heading {
+  font-family: 'Ogg', serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: var(--spacing-s) 0 var(--spacing-xl) 0;
+}
+
+.number {
+  font-family: 'Spectral', serif;
+  font-size: var(--fontsize-l);
+  text-align: center;
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+.box-container {
+  display: flex;
+}
+
+#bestsellers .box {
+  width: 270px;
+  text-align: center;
+  margin-right: var(--spacing-m);
+  padding: var(--spacing-m);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+#bestsellers .box:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.stars {
+  display: flex;
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+}
+
+.brand-name {
+  font-size: var(--fontsize-s);
+  text-transform: uppercase;
+  margin-top: var(--spacing-s);
+}
+
+.product-name {
+  font-size: var(--fontsize-xs);
+  color: var(--color-darkgray);
+  padding: var(--spacing-s) var(--spacing-l);
+  line-height: 1.2;
+}
+
+.rate {
+  font-size: var(--fontsize-xs);
+}
+
+.stars li {
+  color: var(--color-point);
+  margin-right: var(--spacing-xxs);
+}
+
+.price {
+  font-weight: 600;
+  font-size: var(--fontsize-s);
+  padding: var(--spacing-s);
+}
+
+.box img {
+  width: 100%;
+}

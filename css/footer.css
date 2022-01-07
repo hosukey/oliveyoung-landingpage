@@ -1,0 +1,69 @@
+/* footer */
+
+#footer {
+  font-family: 'Montserrat', sans-serif;
+}
+#footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-darkgray);
+  margin-bottom: var(--spacing-xl);
+}
+
+#footer .contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-l);
+  padding: var(--spacing-l);
+  flex-wrap: wrap;
+}
+
+#footer .contents-left {
+  display: flex;
+}
+
+#footer .myaccount {
+  margin-left: var(--spacing-xl);
+}
+
+#footer ul li:first-child {
+  color: var(--color-black);
+  font-weight: 600;
+}
+
+#footer .logo {
+  font-size: var(--fontsize-ml);
+  font-weight: 600;
+  width: 300px;
+  letter-spacing: 1px;
+}
+
+#footer li {
+  margin-bottom: var(--spacing-m);
+  font-size: var(--fontsize-s);
+}
+
+#footer li:hover {
+  opacity: 70%;
+}
+
+#footer .sns {
+  display: flex;
+}
+
+#footer .sns li {
+  margin-left: var(--spacing-l);
+  font-size: var(--fontsize-ml);
+  color: var(--color-black);
+  transition: 0.25s ease-in;
+}
+
+#footer .sns li:hover {
+  opacity: 70%;
+}
+
+#footer .copyrights {
+  text-align: center;
+  padding: var(--spacing-l) 0;
+  font-size: var(--fontsize-s);
+}

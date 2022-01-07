@@ -1,0 +1,65 @@
+/* subscription  */
+#subscription {
+  margin-bottom: var(--spacing-l);
+  font-family: 'lato', sans-serif;
+  padding: var(--spacing-l);
+}
+#subscription .line {
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-primary);
+  margin-bottom: var(--spacing-m);
+}
+
+#subscription h2 {
+  font-family: 'Ogg', serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+#subscription .subscription-container {
+  display: flex;
+  gap: var(--spacing-xxl);
+  padding: var(--spacing-xl) 0 var(--spacing-xl);
+}
+
+.subscription-left li:nth-child(2) {
+  margin-top: var(--spacing-m);
+  line-height: 1.6;
+  color: var(--color-darkgray);
+  font-weight: 300;
+  width: 450px;
+  font-size: var(--fontsize-s);
+}
+
+.subscription-right p {
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subscription-right span {
+  color: var(--color-primary);
+}
+
+.subscription-right input {
+  padding: var(--spacing-s);
+  width: 300px;
+  margin-top: var(--spacing-s);
+}
+
+.subscription-right button {
+  font-family: 'Montserrat', sans-serif;
+  height: 44px;
+  margin-left: var(--spacing-s);
+  width: 130px;
+  border-radius: 6px;
+  background-color: var(--color-black);
+  color: white;
+  font-size: var(--fontsize-m);
+  font-weight: 600;
+  transition: 0.25s ease-in;
+}
+
+.subscription-right button:hover {
+  opacity: 70%;
+}

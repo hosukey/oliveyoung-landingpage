@@ -462,6 +462,7 @@ nav img {
 #subscription {
   margin-bottom: var(--spacing-l);
   font-family: 'lato', sans-serif;
+  padding: var(--spacing-l);
 }
 #subscription .line {
   width: 50px;
@@ -676,6 +677,10 @@ nav img {
   .insta-container {
     gap: 0;
   }
+
+  #subscription .subscription-container {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 764px) {
@@ -717,5 +722,21 @@ nav img {
   }
   .insta-container li {
     width: 50%;
+  }
+
+  #subscription .subscription-left li {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 574px) {
+  #subscription input {
+    width: 100%;
+  }
+  #subscription button {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
+    margin-top: var(--spacing-xs);
   }
 }

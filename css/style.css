@@ -691,7 +691,7 @@ nav img {
     padding: 0px;
   }
   #advertisement .shop-cta {
-    margin-bottom: var(--spacing-m);
+    margin-bottom: var(--spacing-l);
   }
 
   #advertisement .description-container {
@@ -700,5 +700,9 @@ nav img {
 
   #vdl-advertisement .box-container {
     flex-direction: column;
+  }
+
+  #vdl-advertisement .container .box-container {
+    order: 2;
   }
 }

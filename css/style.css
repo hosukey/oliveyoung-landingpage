@@ -540,6 +540,8 @@ nav img {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--spacing-l);
+  padding: var(--spacing-l);
+  flex-wrap: wrap;
 }
 
 #footer .contents-left {
@@ -695,6 +697,12 @@ nav img {
     margin-bottom: var(--spacing-s);
     width: 50%;
   }
+
+  #footer .sns li {
+    margin-left: 0;
+    margin-top: var(--spacing-l);
+    margin-right: var(--spacing-l);
+  }
 }
 
 @media only screen and (max-width: 694px) {
@@ -738,5 +746,14 @@ nav img {
     margin-left: 0;
     border-radius: 0;
     margin-top: var(--spacing-xs);
+  }
+
+  #footer .contents-left {
+    flex-direction: column;
+  }
+
+  #footer .contents-left ul {
+    margin-left: 0;
+    margin-top: var(--spacing-m);
   }
 }

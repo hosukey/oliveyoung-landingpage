@@ -559,6 +559,14 @@ font-family: 'Spectral', serif;
     transform: translate(-100px, -80px);
   }
 
+  #bestsellers .box {
+    margin-right: 0;
+  }
+
+  #bestsellers .product-name {
+    padding: var(--spacing-s) var(--spacing-m);
+  }
+
   #advertisement > .container {
     flex-direction: column;
   }
@@ -619,6 +627,12 @@ font-family: 'Spectral', serif;
 }
 
 @media only screen and (max-width: 764px) {
+  #bestsellers .box-container {
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
   #hero .contents {
     transform: translate(0px, 0px);
     text-align: center;
